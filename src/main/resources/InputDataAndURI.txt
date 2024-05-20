@@ -1,0 +1,34 @@
+******************Customer API****************************
+-->To Login
+POST : http://localhost:8888/Ekart/customer-api/login
+{
+    "emailId": "atul@gmail.com",
+    "password": "12345678"
+}
+
+--> Registering Customer to the Database
+POST : http://localhost:8888/Ekart/customer-api/register
+{
+    "emailId":"suresh@gmail.com",
+    "name" :"Suresh",
+    "password":"12345678",
+    "phoneNumber":"9285054848",
+    "address":"New Delhi"
+}
+
+--> Update customer Address
+PUT : http://localhost:8888/Ekart/customer-api/customer/suresh@gmail.com/address/
+In Text : Location
+
+--> Delete customer Address
+DELETE : http://localhost:8888/Ekart/customer-api/customer/suresh@gmail.com/
+
+******************Product API****************************
+
+-->To get All Products
+GET : http://localhost:8888/Ekart/product-api/products
+
+-->TO get Product By productId
+GET : http://localhost:8888/Ekart/product-api/product/1000
+
+
